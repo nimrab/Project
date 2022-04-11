@@ -1,0 +1,24 @@
+@import "./src/styles/sass/variables";
+@import "./src/styles/sass/mixins";
+
+
+
+
+.pack {
+  @include tableBlock();
+
+  .button {
+    @include text(12px, 400, $primaryColor, 1px);
+    background-color: #D7D8EF;
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin: 0 5px;
+    height: 32px;
+  }
+
+  .delete {
+    background-color: #F1453D;
+    color: $authBlockColor;
+  }
+}

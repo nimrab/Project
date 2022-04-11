@@ -1,0 +1,118 @@
+@import "src/styles/sass/mixins";
+@import "src/styles/sass/variables";
+
+.packsListPageContainer {
+  height: min-content;
+  display: flex;
+  width: 80%;
+  margin-top: 84px;
+  border: $authTextColor solid 1px;
+  border-radius: 8px;
+  background-color: $authBlockColor;
+  @media screen and (max-width: 1050px) {
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .leftBlock {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 15px;
+    background-color: #ECECF9;
+    border-radius: 8px;
+    @media screen and (max-width: 1050px) {
+      display: flex;
+      flex-direction: row;
+      padding: 0;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between
+    }
+
+    .avaContainer {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin: 10px 0 5px;
+      @media screen and (max-width: 1050px) {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 33%;
+      }
+    }
+
+    .doubleButton {
+      margin-bottom: 5px;
+    }
+
+    h6 {
+      margin: 20px 0 20px;
+      @include text(16px, 600, $authTextColor, 1.2)
+    }
+
+    .show_packs_cards {
+      @media screen and (max-width: 1050px) {
+        display: flex;
+        flex-direction: column;
+        width: 33%;
+        justify-content: space-around;
+        margin-right: 10%;
+      }
+      .buttonSection {
+        display: flex;
+
+        .button {
+          width: 50%;
+          height: 40px;
+          border-radius: 2px;
+        }
+      }
+
+    }
+
+
+    .superRange_span_block {
+      display: flex;
+      justify-content: space-evenly;
+
+      span {
+        color: $primaryColor;
+      }
+
+      .span {
+        width: 10px;
+        @include text(16px, 600, $authTextColor, 1.2)
+      }
+
+      .superRange {
+        width: 60%;
+      }
+    }
+  }
+
+  .rightBlock {
+    padding: 20px;
+    width: 100%;
+    @media screen and (max-width: 1050px) {
+      width: auto;
+      padding: 10px;
+    }
+
+    .input_button {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .preloaderSection{
+      margin-top: 10px;
+      height: 50px;
+    }
+
+    .table {
+      width: 100%;
+    }
+  }
+}

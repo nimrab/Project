@@ -1,0 +1,58 @@
+@import "./src/styles/sass/variables";
+@import "./src/styles/sass/mixins";
+
+
+.pack {
+  //@include tableBlock();
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid $primaryColor;
+  width: 100%;
+  min-height: 50px;
+  margin-top: 5px;
+  @include text(16px, 500, $authTextColor, 1.2);
+
+  .pack_block_question {
+    padding: 15px;
+    width: 17%;
+  }
+  .pack_block_answer{
+    width: 17%;
+  }
+  .pack_block_update{
+    width: 17%;
+  }
+  .pack_block_createdBy{
+    width: 17%;
+  }
+  .pack_block_grade{
+    width: 17%;
+  }
+  .pack_block_action{
+    width: 17%;
+  }
+  .buttons{
+    width: 5%;
+  }
+  .buttonsBlock {
+    display: flex;
+  }
+
+  .button {
+    @include text(12px, 400, $primaryColor, 1px);
+    background-color: #D7D8EF;
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin: 0 5px;
+    height: 32px;
+  }
+
+  .delete {
+    background-color: #F1453D;
+    color: $authBlockColor;
+  }
+}
+

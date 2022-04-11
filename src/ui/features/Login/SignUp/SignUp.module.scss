@@ -1,0 +1,63 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+
+.main_box {
+  @include box();
+
+  .sign_up_box {
+    .sign_up_box_header {
+      .logo_text {
+        height: 39px;
+        @include text(26px, 600, $authTextColor, 1);
+        margin-top: 25px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .sign_up_text {
+        height: 33px;
+        @include text(22px, 600, $authTextColor, 1);
+        margin-top: 32px;
+        display: flex;
+        justify-content: center;
+      }
+
+    }
+
+    .input_box_form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 15px 0 33px;
+      width: 100%;
+
+      .input_error {
+        margin-left: 33px;
+        color: red;
+      }
+    }
+
+    .box_buttons {
+      width: 413px;
+      margin: 84px 0 33px;
+      display: flex;
+      justify-content: space-around;
+
+      .btn_not_allowed:hover {
+        cursor: not-allowed;
+      }
+
+      .registerBtn {
+        width: 187px;
+      }
+
+      .cancelBtn {
+        width: 124px;
+      }
+    }
+  }
+}
+
+
+

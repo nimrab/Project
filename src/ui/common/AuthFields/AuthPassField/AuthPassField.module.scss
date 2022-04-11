@@ -1,0 +1,36 @@
+@import "./src/styles/sass/variables";
+@import "./src/styles/sass/mixins";
+
+.input_name {
+  height: 20px;
+  @include text(13px, 400, #24254a, 20px);
+  opacity: 0.5;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.input_box {
+  margin: 24px 33px 0 33px;
+  position: relative;
+}
+
+.input_box_input_text {
+  @include inputBorderStyle(2px solid rgba(36, 37, 74, 0.2));
+  @include inputBoxStyle(100%, 27px, $authBlockColor);
+  @include text(16px, 500, #2d2e46, 24px);
+}
+
+
+.input_box_input_text:focus {
+  outline: none;
+}
+
+.eye {
+  position: absolute;
+  right: 15px;
+  top: 18px;
+}
+
+.eye_opacity {
+  opacity: 0.5;
+}

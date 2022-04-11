@@ -1,0 +1,8 @@
+@import '../../../styles/sass/variables';
+@import '../../../styles/sass/mixins';
+
+.errorPageContainer{
+  .errorPage{
+    @include text(200px, 700, $errorColor, 1.5)
+  }
+}

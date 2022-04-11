@@ -1,0 +1,51 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+.main_box {
+  @include container;
+}
+
+.check_email_box {
+  border: 1px solid #000;
+  margin-top: 84px;
+  width: 413px;
+  background-color: $authBlockColor;
+  border-radius: $authBorderRadius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo_text {
+  height: 39px;
+  @include text(26px, 600, $authTextColor, 1);
+  margin-top: 25px;
+  @include container;
+}
+
+.round {
+  margin-top: 35px;
+  width: 108px;
+  height: 108px;
+  border-radius: 50%;
+  background-color: #d7d8ef;
+  @include container;
+  align-items: center;
+}
+
+.check_email_text {
+  margin-top: 24px;
+  @include container;
+  @include text(22px, 600, $authTextColor, 24px);
+}
+
+.email_instructions {
+  @include container;
+  margin: 21px 42px 138px 42px;
+}
+
+.email_instructions_text {
+  @include text(16px, 400, $authTextColor, 1.24);
+  opacity: 0.7;
+  text-align: center;
+}

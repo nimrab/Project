@@ -1,0 +1,28 @@
+@import "src/styles/sass/mixins";
+@import "src/styles/sass/variables.scss";
+
+.paginatorContainer {
+  @include text(16px, 400, $authTextColor, 14px);
+
+  .button {
+    margin: 5px;
+    padding: 1px 10px;
+    @include text(12px, 400, $authBlockColor, 14px);
+  }
+  .selectedPage {
+    margin: 5px;
+    padding: 5px;
+    background-color: #21268f;;
+    color: $authBlockColor;
+    border-radius: 10%;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+  .notselectpage {
+    margin: 5px;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}

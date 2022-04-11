@@ -1,0 +1,32 @@
+@import "./src/styles/sass/mixins";
+
+.box {
+
+  @include box();
+
+  h3 {
+    @include text(30px, 500, $authTextColor, 1.5);
+  }
+
+  .input_block {
+    margin: 30px;
+    width: 75%;
+
+    .input {
+      margin: 10px;
+    }
+  }
+
+  .button_signOut_block {
+    margin-bottom: 30px;
+  }
+
+  .button_cancele_save_block {
+    width: 100%;
+    display: flex;
+    margin: 15px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+}

@@ -1,0 +1,98 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+
+.main_box {
+  display: flex;
+  justify-content: center;
+}
+
+.forgot_box {
+  border: 1px solid #000;
+  margin-top: 84px;
+  width: 413px;
+  background-color: $authBlockColor;
+  border-radius: $authBorderRadius;
+}
+
+.logo_text {
+  height: 39px;
+  @include text(26px, 600, $authTextColor, 1);
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot_text {
+  height: 33px;
+  @include text(22px, 600, $authTextColor, 1);
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.input_box_form {
+  margin-top: 57px;
+}
+
+.email_instructions {
+  margin: 30px 33px 0px 33px;;
+}
+
+.email_instructions_text {
+  @include text(16px, 400, $authTextColor, 24px);
+  opacity: 0.5;
+}
+
+
+.input_box_buttons {
+  margin: 84px 33px 0 33px;
+  display: flex;
+  justify-content: center;
+}
+
+.btn_send_instructions {
+  width: 266px;
+  height: 36px;
+  background-color: #21268f;
+  border-radius: 30px;
+  border: none;
+  @include text(16px, 500, #ececf9, 1);
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 18px rgba(33, 38, 143, 0.35);
+}
+
+.btn_send_instructions:active {
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.btn_send_instructions:hover {
+  cursor: pointer;
+}
+
+.email_remember {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.try_login_text {
+  display: flex;
+  justify-content: center;
+  margin-top: 11px;
+  margin-bottom: 31px;
+}
+
+.try_login_link {
+  @include text(16px, 600, #21268f, 24px);
+  cursor: pointer;
+}
+
+.btn_not_allowed:hover {
+  cursor: not-allowed;
+}
+
+.input_error {
+  margin-left: 33px;
+  color: red;
+}

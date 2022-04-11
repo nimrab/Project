@@ -1,0 +1,6 @@
+@import './src/styles/sass/mixins';
+
+.error_bar {
+  color: red;
+  @include container;
+}

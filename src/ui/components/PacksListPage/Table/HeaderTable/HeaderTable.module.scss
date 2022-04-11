@@ -1,0 +1,23 @@
+@import "../../../../../styles/sass/variables";
+@import "../../../../../styles/sass/mixins";
+
+.pack {
+  margin-top: 10px;
+  background-color: #ECECF9;
+  @include tableBlock();
+
+  .p_sort {
+    @include text(16px, 500, $authTextColor, 1.2);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .arrow {
+      font-size: 14px;
+      color: $authTextColor;
+    }
+
+  }
+
+}

@@ -1,0 +1,11 @@
+@import "src/styles/sass/mixins";
+@import "src/styles/sass/variables";
+
+.input {
+  width: 65%;
+  background-color: #ECECF9;
+  @include text(14px,400, $authTextColor, 24px);
+  padding: 0 10px;
+  border-radius: 2px;
+  border-color: #635D80;
+}

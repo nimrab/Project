@@ -1,0 +1,52 @@
+@import "../../../../../styles/sass/variables";
+@import "../../../../../styles/sass/mixins";
+
+
+.pack {
+  @include tableBlock();
+
+  .button_learn {
+
+    width: 80%;
+  }
+
+  .button {
+    @include text(12px, 400, $primaryColor, 1px);
+    background-color: #D7D8EF;
+    box-shadow: none;
+    border-radius: 2px;
+    padding: 0 10px;
+    margin: 0 5px;
+    height: 32px;
+
+    @media screen and (max-width: 1500px) {
+      margin: 3px 3px 3px;
+    }
+  }
+
+  .block_button {
+    display: flex;
+    @media screen and (max-width: 1500px) {
+      flex-direction: column;
+    }
+
+
+    .delete {
+      background-color: #F1453D;
+      color: $authBlockColor;
+    }
+
+  }
+
+  .button_in_table {
+    display: flex;
+    justify-content: center;
+    width: 20%;
+    @media screen and (max-width: 1500px) {
+      flex-direction: column;
+    }
+
+  }
+
+
+}

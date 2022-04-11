@@ -1,0 +1,98 @@
+@import "variables";
+
+@mixin text($fontSize, $fontWeight, $textColor, $lineHeight) {
+  font-family: "Montserrat", sans-serif;
+  color: $textColor;
+  font-size: $fontSize;
+  font-weight: $fontWeight;
+  line-height: $lineHeight;
+}
+
+@mixin inputBorderStyle($borderBottomStyle) {
+  border: none;
+  border-bottom: $borderBottomStyle;
+}
+
+@mixin inputBoxStyle($inputWidth, $inputHeight, $inputBgColor) {
+  box-sizing: border-box;
+  height: $inputHeight;
+  width: $inputWidth;
+  background-color: $inputBgColor;
+}
+
+@mixin container() {
+  display: flex;
+  justify-content: center;
+}
+
+@mixin box() {
+  display: flex;
+  height: min-content;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid #000;
+  margin-top: 84px;
+  width: 413px;
+  background-color: $authBlockColor;
+  border-radius: $authBorderRadius;
+}
+
+
+@mixin tableBlock() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $authTextColor;
+  width: 100%;
+  min-height: 50px;
+  @include text(16px, 500, $authTextColor, 1.2);
+  @media screen and (max-width: 1050px) {
+    width: auto;
+  }
+
+  .pack_block_name {
+    padding-left: 2%;
+    width: 30%;
+    &:hover{
+      cursor: pointer;
+      color: $primaryColor;
+    }
+  }
+  .pack_block_cards {
+    width: 10%;
+  }
+  .pack_block_update {
+    display: flex;
+    @include text(12px, 500, $authTextColor, 1.2);
+    width: 25%;
+  }
+  .pack_block_createdBy {
+    display: flex;
+    white-space: pre;
+    @include text(12px, 500, $authTextColor, 1.2);
+    width: 15%;
+  }
+  .pack_block_action {
+    width: 20%;
+  }
+
+}
+
+@mixin modalBox() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 75%;
+  button{
+    margin-top: 15px;
+    width: 40%;
+  }
+  p{
+    margin: 5px;
+    @include text(16px, 500, $textColor, 14px);
+    .packName{
+      font-weight:bolder;
+    }
+  }
+}

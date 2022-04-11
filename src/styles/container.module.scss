@@ -1,0 +1,11 @@
+@import "./src/styles/sass/variables";
+@import "./src/styles/sass/mixins";
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background-color: $blockColor;
+  margin: 50px 0 20px;
+  padding: 20px;
+  border-radius: 5px;
+}

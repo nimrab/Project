@@ -1,0 +1,109 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+.main_box {
+  @include box();
+
+  .sign_in_box {
+    .logo_text {
+      height: 39px;
+      @include text(26px, 600, $authTextColor, 1);
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .sign_in_text {
+      height: 33px;
+      @include text(22px, 600, $authTextColor, 1);
+      margin-top: 32px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .input_box_form {
+      margin-top: 15px;
+
+      .input_error {
+        margin-left: 33px;
+        color: red;
+      }
+
+      .eye:hover {
+        cursor: pointer;
+      }
+    }
+
+    .forgot {
+      margin-top: 25px;
+      margin-right: 51px;
+      display: flex;
+      justify-content: flex-end;
+      text-underline: none;
+
+      .forgot_link, .forgot_link:visited, {
+        text-decoration: none;
+        color: $authTextColor;
+        @include text(14px, 400, $authTextColor, 1);
+        opacity: 0.8;
+
+        &:hover {
+          opacity: 1;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .sign_in_checkbox_box {
+      @include text(16px, 600, $authTextColor, 2px);
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 40px;
+      margin-right: 40px;
+    }
+
+    .input_box_buttons {
+      margin: 50px 33px 0 33px;
+      display: flex;
+      justify-content: center;
+
+      .sign_in_btn {
+        width: 266px;
+      }
+
+      .sign_in_btn:hover {
+        cursor: pointer;
+      }
+
+      .btn_not_allowed:hover {
+        cursor: not-allowed;
+      }
+    }
+
+    .account_text {
+      margin-top: 31px;
+      display: flex;
+      justify-content: center;
+      @include text(14px, 600, $authTextColor, 24px);
+      opacity: 0.5;
+    }
+
+    .sign_up_text {
+      display: flex;
+      justify-content: center;
+      margin-top: 31px;
+      margin-bottom: 30px;
+
+      .sign_up_link {
+        @include text(16px, 600, #21268f, 24px);
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,14 @@
+@import "../../../styles/sass/mixins";
+@import "../../../styles/sass/variables";
+
+.select {
+  margin: 10px;
+  padding: 5px;
+  background-color: $authBlockColor;
+  width: 50px;
+  @include text(14px, 400, $authTextColor, 14px);
+
+  &:hover {
+    cursor: pointer;
+  }
+}

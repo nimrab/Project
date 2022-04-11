@@ -1,0 +1,64 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+.main_box {
+  display: flex;
+  justify-content: center;
+}
+
+
+.create_pass_box {
+  border: 1px solid #000;
+  margin-top: 84px;
+  width: 413px;
+  background-color: $authBlockColor;
+  border-radius: $authBorderRadius;
+}
+
+.logo_text {
+  height: 39px;
+  @include text(26px, 600, $authTextColor, 1);
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.create_pass_text {
+  height: 33px;
+  @include text(22px, 600, $authTextColor, 1);
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+}
+
+.input_box_form {
+  margin-top: 57px;
+}
+
+.create_instructions {
+  margin: 30px 33px 0 33px;
+}
+
+.create_instructions_text {
+  @include text(16px, 400, $authTextColor, 24px);
+  opacity: 0.5;
+}
+
+.input_box_buttons {
+  @include container;
+  margin-top: 99px;
+  margin-bottom: 68px;
+}
+
+.createPassBtn {
+  width: 266px;
+}
+
+.btn_not_allowed:hover {
+  cursor: not-allowed;
+}
+
+.input_error {
+  margin-left: 33px;
+  color: red;
+}

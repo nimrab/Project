@@ -1,0 +1,34 @@
+@import "./src/styles/sass/mixins";
+@import "./src/styles/sass/variables";
+
+
+.box {
+  @include box();
+
+  h3 {
+    @include text(30px, 500, $authTextColor, 1.5);
+  }
+
+  .userData {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0 20px;
+
+    p {
+      @include text(18px, 1000, $authTextColor, 1);
+      margin: 10px;
+      a{
+        @include text(18px, 1000, $primaryColor, 1);
+      }
+    }
+
+
+  }
+  .button_block {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin: 30px;
+  }
+
+}

@@ -1,0 +1,15 @@
+.select{
+    margin: 10px;
+    padding: 3px;
+    background-color: #FF6B00;
+    width: 100px;
+    font-size: 25px;
+    color: #333333
+}
+.select:focus{
+    background-color: #FF6B00;;
+}
+
+.option{
+    background-color: #f7f8f9;
+}

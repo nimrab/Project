@@ -1,0 +1,71 @@
+@import "../../../../styles/sass/variables";
+@import "../../../../styles/sass/mixins";
+
+
+.main_box {
+  @include box;
+
+  .learn_box {
+    .learn_box_header {
+      margin-top: 36px;
+      @include container;
+      @include text(22px, 600, $authTextColor, 1);
+    }
+
+    .error_box_form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      margin: 15px 0 33px;
+      width: 100%;
+    }
+
+    .question_box {
+      margin-top: 33px;
+      margin-left: 30px;
+      .question_question {
+        @include text(16px, 600, $authTextColor, 24px);
+      }
+      .question_text {
+        @include text(16px, 400, $authTextColor, 24px);
+      }
+    }
+    .answer_box {
+      margin-top: 12px;
+      margin-left: 30px;
+      .question_question {
+        @include text(16px, 600, $authTextColor, 24px);
+      }
+      .question_text {
+        @include text(16px, 400, $authTextColor, 24px);
+      }
+    }
+
+    .rate_box {
+      .rate_header_text {
+        margin-left: 33px;
+        @include text(16px, 600, $authTextColor, 24px);
+      }
+      .radio {
+        margin-left: 33px;
+      }
+
+    }
+
+    .box_buttons {
+      width: 413px;
+      margin: 78px 0 33px;
+      display: flex;
+      justify-content: space-around;
+
+      .show_answer_btn {
+        width: 187px;
+      }
+
+      .cancel_btn {
+        width: 124px;
+      }
+    }
+  }
+}
+

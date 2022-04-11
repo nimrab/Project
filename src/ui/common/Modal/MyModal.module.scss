@@ -1,0 +1,52 @@
+@import "src/styles/sass/mixins";
+@import "src/styles/sass/variables";
+
+.modal {
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.5s;
+
+
+  .modal_content {
+    padding: 30px;
+    border-radius: 12px;
+    background-color: $blockColor;
+    width: 30%;
+    height: 25%;
+    transform: scale(0.5);
+    transition: 0.5s all;
+
+    .name_section {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        margin: 0;
+        color: $primaryColor;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+
+  }
+
+  .modal_content_active {
+    transform: scale(1);
+  }
+}
+
+.modal_active {
+  opacity: 1;
+  pointer-events: all;
+}
